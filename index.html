@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e3d78">
+  <meta name="description" content="DocSeva - Online document and government service assistance.">
+  <title>DocSeva — Aapke Documents, Hamari Seva.</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="DocSeva home">
+    <img src="icon-192.png" alt="DocSeva logo">
+    <span><b>DocSeva</b><small data-i18n="tagline">Aapke Documents, Hamari Seva.</small></span>
+  </a>
+  <nav>
+    <a href="#services" data-i18n="nav_services">Services</a>
+    <a href="#how" data-i18n="nav_how">How it works</a>
+    <a href="#track" data-i18n="nav_track">Track Order</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </nav>
+  <button id="langBtn" class="lang">हिन्दी</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <span class="pill" data-i18n="pill">Online Document Service</span>
+    <h1 data-i18n="hero_title">Aapke Documents,<br><em>Hamari Seva.</em></h1>
+    <p data-i18n="hero_text">Ghar baithe documentation services ke liye apply karein. Documents upload karein, advance payment karein aur order status track karein.</p>
+    <div class="actions">
+      <a class="btn primary" href="#services" data-i18n="apply">Apply Now</a>
+      <a class="btn secondary" href="#track" data-i18n="track">Track Order</a>
+    </div>
+    <div class="trust">
+      <span>✓ <span data-i18n="secure">Secure workflow</span></span>
+      <span>✓ <span data-i18n="support">Bhopal-based support</span></span>
+      <span>✓ <span data-i18n="bilingual">Hindi + English</span></span>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="hero-card-top">DOC<span>SEVA</span></div>
+    <div class="doc-stack">
+      <div class="doc">PAN<br><small>Card</small></div>
+      <div class="doc">FSSAI<br><small>License</small></div>
+      <div class="doc">Gumasta<br><small>Registration</small></div>
+    </div>
+    <strong data-i18n="hero_card">One place for your document services.</strong>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="section-head">
+    <span class="eyebrow" data-i18n="our_services">OUR SERVICES</span>
+    <h2 data-i18n="services_title">Choose a service</h2>
+    <p data-i18n="services_sub">Select a service to see the starting fee and apply.</p>
+  </div>
+  <div class="grid" id="serviceGrid"></div>
+</section>
+
+<section id="how" class="section soft">
+  <div class="section-head">
+    <span class="eyebrow" data-i18n="how_eyebrow">HOW IT WORKS</span>
+    <h2 data-i18n="how_title">Simple, clear & online</h2>
+  </div>
+  <div class="steps">
+    <div><b>1</b><h3 data-i18n="s1t">Choose service</h3><p data-i18n="s1p">Apni required service select karein.</p></div>
+    <div><b>2</b><h3 data-i18n="s2t">Upload documents</h3><p data-i18n="s2p">Required documents ki details dein.</p></div>
+    <div><b>3</b><h3 data-i18n="s3t">Pay advance</h3><p data-i18n="s3p">Order confirm karne ke liye 50% advance.</p></div>
+    <div><b>4</b><h3 data-i18n="s4t">We process</h3><p data-i18n="s4p">Aap order status online track kar sakte hain.</p></div>
+  </div>
+</section>
+
+<section id="track" class="section track-section">
+  <div class="track-box">
+    <div>
+      <span class="eyebrow" data-i18n="track_eyebrow">ORDER TRACKING</span>
+      <h2 data-i18n="track_title">Apna order track karein</h2>
+      <p data-i18n="track_sub">Demo tracker abhi frontend par hai. Backend connect hone ke baad real-time status dikhega.</p>
+    </div>
+    <form id="trackForm">
+      <input id="orderId" placeholder="e.g. DS10025" aria-label="Order ID" required>
+      <button class="btn primary" type="submit" data-i18n="track_btn">Track</button>
+    </form>
+    <div id="trackResult" class="result" hidden></div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div>
+    <span class="eyebrow" data-i18n="contact_eyebrow">CONTACT</span>
+    <h2 data-i18n="contact_title">DocSeva, Bhopal</h2>
+    <p data-i18n="contact_sub">Hindi ya English mein humse baat karein.</p>
+  </div>
+  <div class="contact-cards">
+    <a href="tel:+919285425898"><b>📞 Business</b><span>92854 25898</span></a>
+    <a href="https://wa.me/919584279861" target="_blank" rel="noopener"><b>💬 WhatsApp</b><span>95842 79861</span></a>
+    <div><b>📍 Location</b><span>Bhopal, Madhya Pradesh</span></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><b>DocSeva</b> — <span data-i18n="footer_tag">Aapke Documents, Hamari Seva.</span></div>
+  <small data-i18n="footer_note">This website is an initial prototype. Service eligibility and authorised workflows apply.</small>
+</footer>
+
+<!-- Apply modal -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-card">
+    <button class="close" id="closeModal">×</button>
+    <span class="eyebrow" id="modalEyebrow">APPLY</span>
+    <h2 id="modalTitle">Service</h2>
+    <p id="modalPrice"></p>
+    <form id="applyForm">
+      <input id="name" placeholder="Full name" required>
+      <input id="mobile" placeholder="Mobile number" inputmode="numeric" pattern="[0-9]{10}" required>
+      <textarea id="notes" placeholder="Tell us what you need (optional)"></textarea>
+      <label class="file">📎 <span data-i18n="upload_label">Select document files</span>
+        <input id="files" type="file" multiple>
+      </label>
+      <p class="mini" data-i18n="upload_note">For this prototype, files are not uploaded to a server. Secure backend storage will be added before live document collection.</p>
+      <button class="btn primary" type="submit" data-i18n="continue_whatsapp">Continue on WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
