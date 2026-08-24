@@ -91,7 +91,6 @@ const i18n = {
     tagline: "Aapke Documents, Hamari Seva.",
     nav_services: "Services",
     nav_how: "How it works",
-    nav_track:
     nav_contact: "Contact",
     pill: "DOCUMENTATION ASSISTANCE",
     hero_title: "Aapke Documents,<br><em>Hamari Seva.</em>",
