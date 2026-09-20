@@ -176,6 +176,55 @@ if (panDemoForm) {
   });
 }
 
+<!-- ================= PAN SERVICES ================= -->
+
+<section class="section soft" id="pan-services">
+
+  <div class="section-head">
+    <span class="eyebrow">PAN SERVICES</span>
+
+    <h2>Select PAN Service</h2>
+
+    <p>
+      Apni required PAN service choose karein.
+    </p>
+  </div>
+
+  <div class="grid">
+
+    <article class="service">
+      <div class="service-icon">🔍</div>
+      <h3>Verify Existing PAN</h3>
+      <p>PAN details verification assistance.</p>
+      <button class="btn primary" onclick="selectPanService('PAN Verification')">
+        Select
+      </button>
+    </article>
+
+    <article class="service">
+      <div class="service-icon">🪪</div>
+      <h3>New PAN Apply</h3>
+      <p>New PAN application assistance.</p>
+      <button class="btn primary" onclick="selectPanService('New PAN Apply')">
+        Select
+      </button>
+    </article>
+
+    <article class="service">
+      <div class="service-icon">✏️</div>
+      <h3>PAN Correction</h3>
+      <p>PAN correction process assistance.</p>
+      <button class="btn primary" onclick="selectPanService('PAN Correction')">
+        Select
+      </button>
+    </article>
+
+  </div>
+
+  <div id="selectedPanService" class="result" hidden></div>
+
+</section>
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js");
 }
