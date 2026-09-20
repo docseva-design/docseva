@@ -181,16 +181,34 @@
 
   <div class="track-box">
 
-    <form id="panDemoForm">
+    
+<form id="panDemoForm">
 
-      <label for="customerName">Your Name</label>
+  <label for="aadhaarNumber">Aadhaar Number</label>
 
-      <input
-        id="customerName"
-        type="text"
-        placeholder="Enter your name"
-        required
-      >
+  <input
+    id="aadhaarNumber"
+    type="text"
+    inputmode="numeric"
+    placeholder="Enter 12-digit Aadhaar number"
+    pattern="[0-9]{12}"
+    maxlength="12"
+    required
+  >
+
+  <label>
+    <input type="checkbox" required>
+    I confirm that I am authorized to use these details.
+  </label>
+
+  <button class="btn primary" type="submit">
+    Find PAN
+  </button>
+
+</form>
+
+<div id="panDemoResult" class="result" hidden></div>
+
 
       <label for="customerMobile">Mobile Number</label>
 
