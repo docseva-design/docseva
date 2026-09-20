@@ -162,6 +162,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+const panDemoForm = document.querySelector("#panDemoForm");
+
+if (panDemoForm) {
+  panDemoForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const result = document.querySelector("#panDemoResult");
+
+    result.hidden = false;
+    result.textContent =
+      "Demo submitted. Actual PAN verification service will be available after secure backend integration.";
+  });
+}
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js");
 }
