@@ -199,41 +199,55 @@
 
 </section>
 
-<!-- ================= PAN FIND ASSISTANCE ================= -->
+
+<!-- ================= PAN FIND DEMO ================= -->
 
 <section class="section track-section" id="pan-find">
 
   <div class="section-head">
     <span class="eyebrow">PAN ASSISTANCE</span>
 
-    <h2>PAN Find Assistance</h2>
+    <h2>Find PAN Assistance</h2>
 
     <p>
-      PAN-related guidance aur verification assistance ke liye
-      humse connect karein.
+      Enter your details to check the assistance process.
     </p>
   </div>
 
   <div class="track-box">
 
-    <h3>Get PAN Assistance</h3>
+    <form id="panDemoForm">
+
+      <label for="customerName">Your Name</label>
+
+      <input
+        id="customerName"
+        type="text"
+        placeholder="Enter your name"
+        required
+      >
+
+      <label for="customerMobile">Mobile Number</label>
+
+      <input
+        id="customerMobile"
+        type="tel"
+        placeholder="Enter mobile number"
+        pattern="[0-9]{10}"
+        required
+      >
+
+      <button class="btn primary" type="submit">
+        Check Assistance
+      </button>
+
+    </form>
+
+    <div id="panDemoResult" class="result" hidden></div>
 
     <p class="mini">
-      Apni enquiry submit karein. Hum aapko process aur
-      required documents ke baare mein guide karenge.
-    </p>
-
-    <a
-      class="btn primary"
-      href="https://wa.me/919584279861?text=Hello%20DocSeva%2C%20mujhe%20PAN%20assistance%20chahiye."
-      target="_blank"
-      rel="noopener"
-    >
-      WhatsApp par Enquiry Karein
-    </a>
-
-    <p class="mini">
-      Apni Aadhaar ya PAN details public chat mein share na karein.
+      Demo only: No Aadhaar or PAN number is collected.
+      Actual verification requires an authorized secure service.
     </p>
 
   </div>
