@@ -1,5 +1,13 @@
 const services = [
   { id:"pan", icon:"🪪", en:"PAN Card", hi:"PAN Card", descEn:"New PAN and PAN-related assistance.", descHi:"नए PAN और PAN से संबंधित सहायता।" },
+  {
+  id:"panfind",
+  icon:"🔍",
+  en:"PAN Find Assistance",
+  hi:"PAN Find सहायता",
+  descEn:"Guidance for PAN-related verification and services.",
+  descHi:"PAN से संबंधित verification और services की सहायता।"
+},
   { id:"voter", icon:"🗳️", en:"Voter ID Card", hi:"Voter ID Card", descEn:"Voter ID application assistance.", descHi:"Voter ID के लिए आवेदन सहायता।" },
   { id:"income", icon:"📄", en:"Income Certificate", hi:"Income Certificate", descEn:"Income certificate application assistance.", descHi:"Income Certificate के लिए आवेदन सहायता।" },
   { id:"domicile", icon:"🏠", en:"Domicile Certificate", hi:"Domicile Certificate", descEn:"Domicile certificate application assistance.", descHi:"Domicile Certificate के लिए आवेदन सहायता।" },
